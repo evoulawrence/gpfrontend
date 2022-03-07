@@ -1,0 +1,79 @@
+.chart {
+    margin-top: 72px;
+}
+
+.chartHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.chartHeaderLeft {
+    display: flex;
+    align-items: center;
+}
+
+.chartTitle {
+    /* margin-bottom: 20px; */
+    font-size: 21px;
+    font-weight: 700;
+    color: #001B21;
+    line-height: 32px;
+    margin-right: 36px;
+}
+
+.chartSubTitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: #017189;
+}
+
+.chartSubTitleArrow {
+    font-weight: 400;
+    color: #017189;
+}
+
+.transactionHistory {
+    font-weight: 700;
+    font-size: 16px;
+    color: #017189;
+    cursor: pointer;
+}
+
+.transactionDetails {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+}
+
+.totalTransactions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 56px;
+}
+
+.transactionIconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: #F9FAFB;
+    color: #16A34A;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+.transactionHeading {
+    font-weight: 400;
+    font-size: 14px;
+    color: #2B4146;
+}
+
+.transactionAmount {
+    font-weight: 700;
+    font-size: 16px;
+    color: #001B21;
+}

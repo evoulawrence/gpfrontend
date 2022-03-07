@@ -1,0 +1,108 @@
+.topBar {
+    display: flex;
+    align-items: center;
+    height: 93px;
+    background: #FCFDFE;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.welcomeUser {
+    font-weight: 700;
+    font-style: 28px;
+    color: #001B21;
+    margin-left: 32px;
+    line-height: 28px;
+    width: 320px;
+}
+
+.search {
+    /* margin-left: 150px; */
+    background: #f8fcfc;
+    border: 1px solid #aac0c5;
+    box-sizing: border-box;
+    border-radius: 16px;
+    height: 53px;
+    width: 304px;
+    font-size: 14px;
+    color: #AAB3B5;
+    padding: 10px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.treePlanted {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.tree {
+    width: 23px;
+    height: 19px;
+    color: #15803D;
+    /* font-size: 20px !important; */
+}
+
+.numberOfTrees {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2B4146;
+    margin-left: 7px;
+}
+
+.notify {
+    margin-left: 20px;
+    color: #292D32;
+    cursor: pointer;
+}
+
+.userWrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+    /* width: 178px; */
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    
+}
+
+.profilePhoto {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    margin-left: 16px;
+    margin-right: 8px;
+}
+
+.verifiedUserName {
+    display: flex;
+    flex-direction: column;
+}
+
+.verified {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #22c55e;
+}
+
+.userName {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #2B4146;
+}
+
+.arrow {
+    margin-left: 12.5px;
+    margin-right: 16px;
+    color: #55676B;
+    cursor: pointer;
+}

@@ -1,0 +1,59 @@
+.promoBanner {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    width: 246px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.promoBannerInfo {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-left: 21px;
+}
+
+.promoBannerInfoIcon {
+    /* width: 48.59px;
+    height: 50px; */
+    margin-right: 16px;
+    font-size: 42px !important;
+}
+
+.promoBannerInfoText {
+    margin-bottom: 16px;
+}
+
+.promoBannerInfoTitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #001B21;
+}
+
+.promoBannerInfoDetails {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2B4146;
+}
+
+.promoBannerButtonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promoBannerButton {
+    margin-bottom: 24px;
+    padding: 16px 50.5px;
+    border-radius: 8px;
+    background: #017189;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color:#FFFFFF;
+    cursor: pointer;
+}

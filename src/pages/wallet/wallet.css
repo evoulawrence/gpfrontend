@@ -1,0 +1,219 @@
+.walletPage {
+    margin: 16px;
+    padding: 16px;
+}
+
+.walletPageHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.walletPageHeaderLeft {
+    font-size: 21px;
+    font-weight: 600;
+    color: black;
+}
+
+.walletPageHeaderRight {
+    background: #017189;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.walletPageContainer {
+    display: flex;
+    margin-top: 24px;
+}
+
+.walletPageContainerLeft {
+    flex: 2;
+    border: 1px solid #F3F4F6;
+    border-radius: 16px;
+}
+
+.walletPageContainerLeftTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.walletSearchField {
+    padding: 16px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    border: 1px solid #AAC0C5;
+    background: #F8FCFC;
+    font-size: 14px;
+    color: #AAB3B5;
+    min-width: 280px;
+}
+
+.walletAllOptions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 32px;
+}
+
+.walletAllText {
+    font-size: 16px;
+    color: #017189;
+    font-weight: 700;
+}
+
+.walletAllMore {
+    color: #017189 !important;
+    font-weight: 700 !important;
+    cursor: pointer;
+}
+
+.walletPageContainerRight {
+    flex: 3;
+    border: 1px solid #F3F4F6;
+    margin-left: 24px;
+    border-radius: 16px;
+    padding: 16px 50px;
+}
+
+.walletPageContainerRightTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    border: 1px solid #F3F4F6;
+    border-radius: 16px;
+    margin-bottom: 25.5px;
+}
+
+.walletPageContainerRightTopActive {
+    display: flex;
+    flex-direction: column;
+}
+
+.walletPageContainerRightTopStatus {
+    font-size: 12px;
+    color: #22C55E;;
+}
+
+.walletPageContainerRightTopStatus>span {
+    width: 8px;
+    height: 8px;
+    background: #22C55E;
+    border-radius: 50%;
+    color: transparent;
+    font-size: 10px;
+}
+
+.walletPageContainerRightTopAccName {
+    font-weight: 400;
+    font-size: 16px;
+    color: #001B21;
+}
+
+.walletPageContainerRightTopCurrency {
+    font-weight: 700;
+    font-size: 16px;
+    color: #0A6375;
+}
+
+.walletPageContainerRightTopAmount {
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    color: #001B21;
+}
+
+/* .walletPageContainerRightAccountDetailsTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.walletPageContainerRightAccountDetailsTopRowOne {
+    display: flex;
+    width: 100%;
+    margin-bottom: 9.5px;
+}
+
+.walletPageContainerRightAccountDetailsTopRowOne>span {
+    width: 25%;
+}
+
+.walletPageContainerRightAccountDetailsTopRowTwo {
+    display: flex;
+    width: 100%;
+}
+
+.walletPageContainerRightAccountDetailsTopRowTwo>span {
+    width: 25%;
+}
+
+.walletText {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2B4146;
+}
+
+.walletAmount {
+    font-size: 16px;
+    font-weight: 400;
+    color: #001B21;
+}
+
+.walletAmountRight {
+    text-align: right;
+}
+
+.walletPageContainerRightAccountDetailsTopRight {
+    display: flex;
+    justify-content: space-between;
+}
+
+.walletPageContainerRightAccountDetailsBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25.5px;
+}
+
+.walletBalanceButton {
+    font-weight: 700;
+    font-size: 16px;
+    color: #017189;
+    border-radius: 16px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    cursor: pointer;
+}
+
+.walletBalanceButtonIcon {
+    margin-right: 10px;
+}
+
+.walletMoreOptions {
+    display: flex;
+    align-items: center;
+    margin-top: 25.5px;
+    margin-bottom: 40px;
+}
+
+.walletMoreOptionsText {
+    font-size: 16px;
+    font-weight: 700;
+    color: #017189;
+}
+
+.walletMoreOptionsIcon {
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    color: #017189 !important;
+    cursor: pointer;
+}

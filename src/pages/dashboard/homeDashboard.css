@@ -1,0 +1,154 @@
+.homeDashboard {
+    margin: 16px;
+    padding: 16px;
+}
+
+.numberOfWallets {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.walletsLeft {
+    font-weight: 700;
+    font-size: 21px;
+    color: #001B21;
+}
+
+.walletsRight {
+    font-weight: 700;
+    font-size: 16px;
+    color: #017189;
+    cursor: pointer;
+}
+
+.currencyWallets {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin-top: 16px;
+}
+
+.currencyWrapper {
+    width: 32%;
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid #F1F5F9;
+    box-sizing: border-box;
+    /* background: #eee; */
+
+}
+
+.currencyWalletsTopInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 43px;
+}
+
+.currencyWalletsTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.currencyWalletsName {
+    font-weight: 400;
+    font-size: 16px;
+    color: #001B21;
+}
+
+.currencyWalletsCurrency {
+    font-weight: 400;
+    font-size: 14px;
+    color: #2B4146;
+}
+
+.flag {
+    width: 47px;
+    height: 47px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.balance {
+    font-weight: 700;
+    font-size: 28px;
+    color: #001B21;
+}
+
+.currencyWrapper.first {
+    background: #FFF6E6;
+}
+
+.currencyWrapper.second {
+    background: #FBF1F0;
+}
+
+.currencyWrapper.third {
+    background: #ddecef;
+}
+
+.quickLinksWrapper {
+    margin-top: 56px;
+}
+
+.quickLinksHeader {
+    margin-bottom: 24px;
+}
+
+.quickLinksHeaderTitle {
+    font-weight: 700;
+    font-size: 21px;
+    color: #001B21;
+    line-height: 32px;
+}
+
+.quickLinksHeaderSubTitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #94A3B8;
+}
+
+.quickLinks {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+.quickLinksItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12%;
+    border: 1px solid #F1F5F9;
+    background: #FFFFFF;
+    padding: 24px 0px;
+    /* padding-bottom: 24px; */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.quickLinksItemIconWrapper {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #F97316;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 9px;
+}
+
+.quickLinksItemIcon {
+    font-size: 16px !important;
+    color: #FFFFFF;
+}
+
+.quickLinksItemTitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #001B21;
+}

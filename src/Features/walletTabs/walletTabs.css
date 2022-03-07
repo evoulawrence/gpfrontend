@@ -1,0 +1,63 @@
+.walletTabs {
+    margin-top: 24px;
+}
+
+.walletTabsLabel {
+    text-transform: none !important;
+}
+
+/* .css-cjctlb-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    opacity: 1;
+    border-bottom: 2px solid blue !important;
+} */
+
+.walletLists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.walletLists.highlighted {
+    background: #EEF7F9;
+    border-radius: 8px;
+}
+
+.walletNameWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.walletName {
+    display: flex;
+    flex-direction: column;
+}
+
+.walletNameTitle {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.walletNameCurrency {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.walletAvatar {
+    width: 52px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 9px;
+    object-fit: cover;
+}
+
+.walletTotalAmount {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.walletTotalAmountDefault {
+    font-size: 14px;
+    font-weight: 400;
+}
+

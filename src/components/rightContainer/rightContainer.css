@@ -1,10 +1,5 @@
-.container {
-    display: flex;
-    min-width: 100vw;
-}
-
 .rightContainer {
-    width: calc(100vw - 316px);
+    width: calc(100% - 316px);
     background: #E5E5E5;
     height: 100vh;
     overflow-y: scroll;

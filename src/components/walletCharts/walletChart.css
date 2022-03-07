@@ -1,0 +1,55 @@
+.chartSubTitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: #017189;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 26px;
+    margin-top: 16px;
+}
+
+.chartSubTitleArrow {
+    font-weight: 400;
+    color: #017189;
+    margin-top: 0px;
+    cursor: pointer;
+    font-size: 32px !important;
+}
+
+.wallettransactionDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.wallettotalTransactions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wallettransactionIconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: #F9FAFB;
+    color: #16A34A;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+.wallettransactionHeading {
+    font-weight: 400;
+    font-size: 14px;
+    color: #2B4146;
+}
+
+.wallettransactionAmount {
+    font-weight: 700;
+    font-size: 16px;
+    color: #001B21;
+}

@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# React: HackerShop Checkout
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Environment 
 
-## Available Scripts
+- React Version: 16.13.1
+- Node Version: ^12.18.3
+- Default Port: 8000
 
-In the project directory, you can run:
+## Application Demo:
 
-### `npm start`
+![](https://hrcdn.net/s3_pub/istreet-assets/C4mOIX3YmQsydeXZCrbYvw/hackershop-checkout.gif)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Functionality Requirements
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The app has two separate views/components. The Product Listing Component and Cart Component. The list of products to be displayed is already provided in the app. 
 
-### `npm test`
+The Product Listing component should implement the following functionalities:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Clicking on each 'Add To Cart' button should add the item to the shopping cart. When an item is added to the cart, 
+  - 'Add To Cart' button should be removed from view and 'Remove From Cart' button should be displayed.
+  - An entry should be added to the table in Cart Component.
 
-### `npm run build`
+- Clicking on each 'Remove From Cart' button should remove the item from the cart and display 'Add to Cart' button for the corresponding product item.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The Cart Component should have the following functionalities:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  - Display all the items in the cart in a table.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - Display the Cart Subtotal, Discount Value, and Total Price. 
 
-### `npm run eject`
+  - The Cart has a Coupon Select Input. On selecting a coupon from this input, an appropriate discount is applied and the total price is calculated and displayed. `(Subtotal - Discount = Total Price)`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Items should be displayed in the Cart Component in the order they are added to Cart. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- The list of products and the cart object is passed as Prop to the Product Listing Component and Cart Component respectively.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Each product object contains the following properties: 
+- name: Name of the product. [STRING]
+- price - The price of the Product. [NUMBER]
+- id: Unique ID of the product. (Auto Generated) [NUMBER]
+- image:  The image URL of the product. [STRING]
+- cartQuantity: The quantity of the item in the cart. The default value should be 0. [NUMBER]
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+Each item in the cart, Type CartItem has the following properties:
+- id: Same as ID of the product. [NUMBER]
+- item - The heading property of the product. [STRING]
+- quantity: The quantity of the item in the cart [NUMBER]
+- price: The total amount of the item in cart. (quantity x product.price) [NUMBER]
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Testing Requirements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The following data-testid/class attributes are required in the component for the tests to pass:
 
-### Code Splitting
+- Each product item in the Listing component should have the class product-item.
+- Each Add to Cart button should have the data-testid attribute 'btn-item-add'.
+- Each Remove to Cart button should have the data-testid attribute 'btn-item-add'.
+- The table rows `<tr>` in the Cart Component corresponding to items in the cart should have the data-testid attribute of cart-item-0, cart-item-1, and so on.
+- The table data `<td>` containing the Name of the Item in the cart should have the data-testid attribute 'cart-item-name'.
+- The table data `<td>` containing the Quantity of the Item in the cart should have the data-testid attribute 'cart-item-quantity'.
+- The table data `<td>` containing the Price of the Item in the cart should have the data-testid attribute 'cart-item-price'.
+- The Coupon Select input should have a data-testid attribute 'cart-coupon'
+- The Cart Subtotal value container should have a data-testid 'cart-subtotal'. 
+- The Cart Discount value container should have a data-testid 'cart-discount'. 
+- The Cart Total Price value container should have a data-testid 'cart-total'. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+_Note: Please note that the component has the above data-testid attributes for test cases and certain classes and ids for rendering purposes. It is advised not to change them._
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project Specifications
 
-### Making a Progressive Web App
+**Read Only Files**
+- [src/App.test.js]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Commands**
+- run: 
+```bash
+bash bin/env_setup && . $HOME/.nvm/nvm.sh && npm start
+```
+- install: 
+```bash
+bash bin/env_setup && . $HOME/.nvm/nvm.sh && npm install
+```
+- test: 
+```bash
+bash bin/env_setup && . $HOME/.nvm/nvm.sh && npm test
+```

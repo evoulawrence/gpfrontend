@@ -1,0 +1,38 @@
+.leftContainer {
+    position: sticky;
+    width: 316px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    top: 0px;
+    background: #017189;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+	scrollbar-width: none;
+}
+
+.logoWrapper {
+    margin: 32px 64px;
+}
+
+.logo {
+    cursor: pointer;
+    width: 188px;
+    height: 42.04px;
+}
+
+.leftContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.leftContainer::-webkit-scrollbar-track {
+    background: #2B899D;
+}
+
+.leftContainer::-webkit-scrollbar-thumb {
+    background-color: #14B8A6; 
+    border-radius: 8px; 
+    border: none;
+}
