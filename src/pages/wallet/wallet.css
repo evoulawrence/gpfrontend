@@ -78,7 +78,7 @@
     border: 1px solid #F3F4F6;
     margin-left: 24px;
     border-radius: 16px;
-    padding: 16px 50px;
+    padding: 16px 16px;
 }
 
 .walletPageContainerRightTop {
@@ -190,8 +190,9 @@
     background: #FFFFFF;
     display: flex;
     align-items: center;
-    padding: 16px 32px;
+    padding: 16px 16px;
     cursor: pointer;
+    width: 30%;
 }
 
 .walletBalanceButtonIcon {
